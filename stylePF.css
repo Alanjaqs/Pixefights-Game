@@ -1,0 +1,1000 @@
+/* TIPOGRAFIA FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* CONFIGURACION GENERAL */
+
+:root {
+    --Dark-gray: #2C3333;
+    --Dark-green: #395B64;
+    --Medium-green: #A5C9CA;
+    --Light-green: #E7F6F2;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    user-select: none;
+}
+
+body {
+    font-size: 62.5%;
+    background-color: var(--Dark-gray);
+}
+
+/* SECCION AUDIO */
+
+#victorias {
+    color: var(--Light-green);
+    font-size: 0.9rem;
+    margin-left: 15rem;
+    margin-top: 1rem;
+}
+
+#derrotas {
+    color: var(--Light-green);
+    font-size: 0.9rem;
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+#seccion-audio {
+    display: flex;
+}
+
+audio::-webkit-media-controls-enclosure {
+    inline-size: 18rem;
+    background-color: var(--Dark-green);
+    margin-top: 1rem;
+}
+
+#activa-musica {
+    color: var(--Light-green);
+    padding-top: 2rem;
+    padding-left: 1rem;
+    user-select: none;
+}
+
+#creditos {
+    color: var(--Light-green);
+    padding-top: 1rem;
+    padding-left: 1rem;
+    user-select: none;
+    margin-left: 15rem;
+}
+
+#creditos-uno {
+    color: var(--Light-green);
+    padding-top: 1rem;
+    padding-left: 1rem;
+    user-select: none;
+    margin-left: 73.5rem;
+}
+
+/* SECCION COMENZAR JUEGO */
+
+#seccion-comenzar-juego {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    block-size: 100vh;
+}
+
+#titulo {
+    color: var(--Light-green);
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    user-select: none;
+}
+
+#boton-comenzar-juego {
+    background-color: var(--Dark-green);
+    color: var(--Light-green);
+    block-size: 4rem;
+    inline-size: 11rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 10rem;
+    user-select: none;
+}
+
+#boton-comenzar-juego:hover {
+    background-color: var(--Medium-green);
+    color: var(--Dark-gray);
+    cursor: pointer;
+}
+
+/* SECCION ELEGIR PERSONAJE */
+
+#seccion-elegir-personaje {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    block-size: 100vh;
+}
+
+#elige-personaje {
+    color: var(--Light-green);
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    user-select: none;
+}
+
+#tarjetas-personajes {
+    display: flex;
+    margin-bottom: 4rem;
+    gap: 2rem;
+}
+
+label {
+    background-color: var(--Dark-green);
+    border-radius: 1rem;
+    block-size: 16rem;
+    inline-size: 12rem;
+}
+
+label:hover {
+    border: 4px solid var(--Light-green);
+    cursor: pointer;
+}
+
+.imagenes-personajes {
+    block-size: 10rem;
+    inline-size: 10rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+.nombres-personajes {
+    color: var(--Light-green);
+    margin-top: 1rem;
+    margin-left: 3.5rem;
+    font-size: 1rem;
+    user-select: none;
+}
+
+#boton-habilidades {
+    background-color: var(--Dark-green);
+    color: var(--Light-green);
+    block-size: 4rem;
+    inline-size: 19rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    user-select: none;
+    margin-bottom: 6rem;
+}
+
+#boton-habilidades:hover {
+    background-color: var(--Medium-green);
+    color: var(--Dark-gray);
+    cursor: pointer;
+}
+
+input {
+    display: none;
+}
+
+/* CARD PERSONAJES */
+
+#card-primer-personaje {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#datos-primer-personaje {
+    background-color: var(--Dark-green);
+    block-size: 22rem;
+    inline-size: 30rem;
+    margin-top: 8rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5, 20%);
+}
+
+p {
+    color: var(--Light-green);
+}
+
+#boton-volver-uno {
+    background-color: var(--Dark-green);
+    color: var(--Light-green);
+    block-size: 3rem;
+    inline-size: 8rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    user-select: none;
+}
+
+#boton-volver-uno:hover {
+    background-color: var(--Medium-green);
+    color: var(--Dark-gray);
+    cursor: pointer;
+}
+
+#boton-seleccionar-uno {
+    background-color: var(--Dark-green);
+    color: var(--Light-green);
+    block-size: 3rem;
+    inline-size: 13rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 1rem;
+    margin-right: 2rem;
+}
+
+#boton-seleccionar-uno:hover {
+    background-color: var(--Medium-green);
+    color: var(--Dark-gray);
+    cursor: pointer;
+}
+
+#nombre-p1, #nombre-p2, #nombre-p3 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 2;
+    font-size: 1.6rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    
+}
+
+#mostrar-HP-p1, #mostrar-HP-p2, #mostrar-HP-p3 {
+    font-size: 1.2rem;
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
+}
+
+#ataque-uno-p1, #ataque-uno-p2, #ataque-uno-p3 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+    font-size: 0.8rem;
+    padding: 2rem;
+    margin-top: 2.2rem;
+}
+
+#ataque-dos-p1, #ataque-dos-p2, #ataque-dos-p3 {
+    grid-row: 4 / 5;
+    grid-column: 1 / 3;
+    font-size: 0.8rem;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+#ataque-tres-p1, #ataque-tres-p2, #ataque-tres-p3 {
+    grid-row: 5 / 6;
+    grid-column: 1 / 3;
+    font-size: 0.8rem;
+    padding-left: 2rem;
+    padding-top: 1.8rem;
+}
+
+
+#imagen-personaje-uno, #imagen-personaje-uno-selec {
+    block-size: 10rem;
+    inline-size: 10rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    border-radius: 0.5rem;
+}
+
+/* PERSONAJE DOS */
+
+#card-segundo-personaje {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#datos-segundo-personaje {
+    background-color: var(--Dark-green);
+    block-size: 22rem;
+    inline-size: 30rem;
+    margin-top: 8rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5, 20%);
+}
+
+#imagen-personaje-dos, #imagen-personaje-dos-selec {
+    block-size: 10rem;
+    inline-size: 10rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+#boton-volver-dos {
+    background-color: var(--Dark-green);
+    color: var(--Light-green);
+    block-size: 3rem;
+    inline-size: 8rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    user-select: none;
+}
+
+#boton-volver-dos:hover {
+    background-color: var(--Medium-green);
+    color: var(--Dark-gray);
+    cursor: pointer;
+}
+
+#boton-seleccionar-dos {
+    background-color: var(--Dark-green);
+    color: var(--Light-green);
+    block-size: 3rem;
+    inline-size: 13rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 1rem;
+    margin-right: 2rem;
+}
+
+#boton-seleccionar-dos:hover {
+    background-color: var(--Medium-green);
+    color: var(--Dark-gray);
+    cursor: pointer;
+}
+
+/* PERSONAJE TRES */
+
+#card-tercer-personaje {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#datos-tercer-personaje {
+    background-color: var(--Dark-green);
+    block-size: 22rem;
+    inline-size: 30rem;
+    margin-top: 8rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5, 20%);
+}
+
+#imagen-personaje-tres, #imagen-personaje-tres-selec {
+    block-size: 10rem;
+    inline-size: 10rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+#boton-volver-tres {
+    background-color: var(--Dark-green);
+    color: var(--Light-green);
+    block-size: 3rem;
+    inline-size: 8rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    user-select: none;
+}
+
+#boton-volver-tres:hover {
+    background-color: var(--Medium-green);
+    color: var(--Dark-gray);
+    cursor: pointer;
+}
+
+#boton-seleccionar-tres {
+    background-color: var(--Dark-green);
+    color: var(--Light-green);
+    block-size: 3rem;
+    inline-size: 13rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 1rem;
+    margin-right: 2rem;
+}
+
+#boton-seleccionar-tres:hover {
+    background-color: var(--Medium-green);
+    color: var(--Dark-gray);
+    cursor: pointer;
+}
+
+/* PERSONAJE UNO ELEGIDO */
+
+#seccion-personaje-uno-elegido {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#div-info-eleccion-uno {
+    display: flex;
+}
+
+#personaje-player-uno {
+    block-size: 20rem;
+    inline-size: 20rem;
+    margin-top: 10rem;
+    margin-right: 18rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#personaje-enemigo-uno {
+    block-size: 20rem;
+    inline-size: 20rem;
+    margin-top: 10rem;
+    
+}
+
+#personaje-uno-h3 {
+    color: var(--Light-green);
+    font-size: 1rem;
+}
+
+#enemigo-uno-h3 {
+    color: var(--Light-green);
+    font-size: 1rem;
+}
+
+/* PERSONAJE DOS ELEGIDO */
+
+#seccion-personaje-dos-elegido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#div-info-eleccion-dos {
+    display: flex;
+}
+
+#personaje-player-dos {
+    block-size: 20rem;
+    inline-size: 20rem;
+    margin-top: 10rem;
+    margin-right: 18rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#personaje-enemigo-dos {
+    block-size: 20rem;
+    inline-size: 20rem;
+    margin-top: 10rem;
+
+}
+
+#personaje-dos-h3 {
+    color: var(--Light-green);
+    font-size: 1rem;
+}
+
+#enemigo-dos-h3 {
+    color: var(--Light-green);
+    font-size: 1rem;
+}
+
+/* PERSONAJE TRES ELEGIDO */
+
+#seccion-personaje-tres-elegido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#div-info-eleccion-tres {
+    display: flex;
+}
+
+#personaje-player-tres {
+    block-size: 20rem;
+    inline-size: 20rem;
+    margin-top: 10rem;
+    margin-right: 18rem;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#personaje-enemigo-tres {
+    block-size: 20rem;
+    inline-size: 20rem;
+    margin-top: 10rem;
+
+}
+
+#personaje-tres-h3 {
+    color: var(--Light-green);
+    font-size: 1rem;
+}
+
+#enemigo-tres-h3 {
+    color: var(--Light-green);
+    font-size: 1rem;
+}
+
+/* BOTONES CONTINUAR */
+
+#boton-continuar-uno {
+    background-color: var(--Dark-green);
+    color: var(--Light-green);
+    block-size: 3rem;
+    inline-size: 11rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    user-select: none;
+    padding: 1rem;
+}
+
+#boton-continuar-uno:hover {
+    background-color: var(--Medium-green);
+    color: var(--Dark-gray);
+    cursor: pointer;
+}
+
+#boton-continuar-dos {
+    background-color: var(--Dark-green);
+    color: var(--Light-green);
+    block-size: 3rem;
+    inline-size: 11rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    user-select: none;
+    padding: 1rem;
+}
+
+#boton-continuar-dos:hover {
+    background-color: var(--Medium-green);
+    color: var(--Dark-gray);
+    cursor: pointer;
+}
+
+#boton-continuar-tres {
+    background-color: var(--Dark-green);
+    color: var(--Light-green);
+    block-size: 3rem;
+    inline-size: 11rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    user-select: none;
+    padding: 1rem;
+}
+
+#boton-continuar-tres:hover {
+    background-color: var(--Medium-green);
+    color: var(--Dark-gray);
+    cursor: pointer;
+}
+
+.imagen-enemigo-elegido {
+    block-size: 10rem;
+    inline-size: 10rem;
+    user-select: none;
+}
+
+.botones-ataques {
+    background-color: var(--Dark-green);
+    color: var(--Light-green);
+    block-size: 3rem;
+    inline-size: 11rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    user-select: none;
+
+}
+
+.botones-ataques:hover {
+    background-color: var(--Medium-green);
+    color: var(--Dark-gray);
+    cursor: pointer;
+}
+
+#ataque-tres-Nila, #ataque-tres-Spark, #ataque-tres-Kriol {
+    background-color: var(--Dark-green);
+    color: var(--Light-green);
+    block-size: 3rem;
+    inline-size: 11rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding: 1rem;
+    padding-left: 3.2rem;
+    margin-top: 0.5rem;
+}
+
+#ataque-tres-Nila:hover, #ataque-tres-Spark:hover, #ataque-tres-Kriol:hover {
+    background-color: var(--Medium-green);
+    color: var(--Dark-gray);
+    cursor: pointer;
+}
+
+#vida-player-uno, #vida-player-dos, #vida-player-tres {
+    font-size: 1.2rem;
+    color: var(--Light-green);
+}
+
+#vida-enemigo-uno, #vida-enemigo-dos, #vida-enemigo-tres {
+    font-size: 1.2rem;
+    color: var(--Light-green);
+}
+
+#boton-combatir-uno, #boton-combatir-dos, #boton-combatir-tres {
+    background-color: var(--Dark-green);
+    color: var(--Light-green);
+    block-size: 3rem;
+    inline-size: 14rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+#boton-combatir-uno:hover, #boton-combatir-dos:hover, #boton-combatir-tres:hover {
+    background-color: var(--Medium-green);
+    color: var(--Dark-gray);
+    cursor: pointer;
+}
+
+#mensajes-box, #mensajes-box-dos, #mensajes-box-tres {
+    background-color: var(--Dark-green);
+    color: var(--Light-green);
+    block-size: 5rem;
+    inline-size: 26rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+#pasar-turno, #pasar-turno-dos, #pasar-turno-tres {
+    background-color: var(--Dark-green);
+    color: var(--Light-green);
+    block-size: 2.5rem;
+    inline-size: 10rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    user-select: none;
+}
+
+#pasar-turno:hover, #pasar-turno-dos:hover, #pasar-turno-tres:hover {
+    background-color: var(--Medium-green);
+    color: var(--Dark-gray);
+    cursor: pointer;
+}
+
+#reiniciar-uno, #reiniciar-dos, #reiniciar-tres {
+    background-color: var(--Dark-green);
+    color: var(--Light-green);
+    block-size: 2.5rem;
+    inline-size: 10rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    user-select: none;
+}
+
+#reiniciar-uno:hover, #reiniciar-dos:hover, #reiniciar-tres:hover {
+    background-color: var(--Medium-green);
+    color: var(--Dark-gray);
+    cursor: pointer;
+}
+
+#seccion-final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+#mensaje-final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    block-size: 20rem;
+    inline-size: 40rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    background-color: var(--Dark-green);
+    color: var(--Light-green);
+}
+
+#mensaje-final-uno, #mensaje-final-dos, #mensaje-final-tres {
+    margin-top: 0.6rem;
+}
+
+#enemigo-uno-elegido-op1, #enemigo-dos-elegido-op1, #enemigo-tres-elegido-op1, #enemigo-uno-elegido-op2, #enemigo-dos-elegido-op2, #enemigo-tres-elegido-op2, #enemigo-uno-elegido-op3, #enemigo-dos-elegido-op3, #enemigo-tres-elegido-op3 {
+    margin-top: 1rem;
+}
+
+#creditos-final {
+    font-size: 0.8rem;
+    position: relative;
+    top: 5rem;
+}
+
+/* MOBILE STYLES */
+
+@media (max-width: 1440px)
+{
+    #seccion-comenzar-juego {
+        overflow-y: hidden;
+    }
+
+    #seccion-personaje-uno-elegido, #seccion-personaje-dos-elegido, #seccion-personaje-tres-elegido {
+        overflow-x: hidden;
+    }
+
+
+    #creditos-uno {
+        display: none;
+    }
+
+    #creditos {
+        display: none;
+    }
+
+    #titulo {
+        font-size: 2rem;
+    }
+
+    #boton-comenzar-juego {
+        font-size: 1.2rem;
+        block-size: 3rem;
+    }
+
+    #elige-personaje {
+        font-size: 1rem;
+    }
+
+    label {
+        block-size: 9rem;
+        inline-size: 7rem;
+    }
+
+    #primer-personaje {
+        position: relative;
+        left: 1.4rem;
+    }
+
+    #tercer-personaje {
+        position: relative;
+        right: 1.4rem;
+    }
+
+    .imagenes-personajes {
+        block-size: 6rem;
+        inline-size: 6rem;
+        margin-left: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .nombres-personajes {
+        margin-top: 1rem;
+        margin-left: 1.6rem;
+        font-size: 0.6rem;
+    }
+
+    #boton-habilidades {
+        block-size: 2.5rem;
+        inline-size: 15rem;
+        font-size: 1rem;
+        margin-bottom: 6rem;
+    }
+
+    #datos-primer-personaje, #datos-segundo-personaje, #datos-tercer-personaje {
+        block-size: 22rem;
+        inline-size: 20rem;
+        margin-top: 8rem;
+        border-radius: 1rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(5, 20%);
+    }
+
+    #boton-seleccionar-uno, #boton-seleccionar-dos, #boton-seleccionar-tres {
+        block-size: 3rem;
+        inline-size: 10rem;
+        font-size: 0.8rem;
+    }
+
+    #boton-volver-uno, #boton-volver-dos, #boton-volver-tres {
+        block-size: 3rem;
+        inline-size: 7rem; 
+        font-size: 0.8rem;
+    }
+
+    #nombre-p1, #nombre-p2, #nombre-p3 {
+        font-size: 1.4rem;
+        margin-left: 1.8rem;    
+    }
+    
+    #mostrar-HP-p1, #mostrar-HP-p2, #mostrar-HP-p3 {
+        font-size: 1rem;
+        grid-row: 2 / 2;
+        grid-column: 2 / 2;
+        margin-left: 2rem;
+    }
+
+    #personaje-player-uno, #personaje-player-dos, #personaje-player-tres {
+        block-size: 20rem;
+        inline-size: 10rem;
+        margin-top: 10rem;
+        margin-right: 18rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+
+    #personaje-enemigo-uno, #personaje-enemigo-dos, #personaje-enemigo-tres {
+        block-size: 20rem;
+        inline-size: 15rem;
+        margin-top: 10rem;
+        margin-right: 11rem;
+    }
+
+    #personaje-uno-h3, #personaje-dos-h3, #personaje-tres-h3 {
+        color: var(--Light-green);
+        font-size: 0.8rem;
+        margin-left: 18rem;
+    }
+    
+    #enemigo-uno-h3, #enemigo-dos-h3, #enemigo-tres-h3 {
+        color: var(--Light-green);
+        font-size: 0.8rem;
+        margin-right: 8rem;
+    }
+    
+    #boton-continuar-uno , #boton-continuar-dos, #boton-continuar-tres{
+        block-size: 3rem;
+        inline-size: 9rem;
+        font-size: 0.8rem;
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+    }
+
+    #victorias {
+        color: var(--Light-green);
+        font-size: 0.6rem;
+        margin-left: 0rem;
+        margin-right: 5rem;
+        margin-top: 1rem;
+    }
+    
+    #derrotas {
+        color: var(--Light-green);
+        font-size: 0.6rem;
+        margin-left: 0rem;
+        margin-right: 3rem;
+        margin-top: 1rem;
+    }
+
+    audio::-webkit-media-controls-enclosure {
+        display: none;
+    }
+    
+    
+.botones-ataques {
+    block-size: 3rem;
+    inline-size: 7rem;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    margin-left: 16rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    position: relative;
+    bottom: 8rem;
+    left: 1rem;
+
+}
+
+#ataque-tres-Nila, #ataque-tres-Spark, #ataque-tres-Kriol {
+    block-size: 3rem;
+    inline-size: 7rem;
+    font-size: 0.8rem;
+    padding-left: 1.8rem;
+    position: relative;
+    left: 17rem;
+    bottom: 8rem;
+}
+
+#personaje-uno-h3, #personaje-dos-h3, #personaje-tres-h3 {
+    color: var(--Light-green);
+    font-size: 1rem;
+    position: relative;
+    bottom: 10rem;
+}
+
+#vida-player-uno, #vida-player-dos, #vida-player-tres {
+    font-size: 1.2rem;
+    color: var(--Light-green);
+    position: relative;
+    left: 17rem;
+    bottom: 9rem;
+}
+
+#enemigo-uno-h3, #enemigo-dos-h3, #enemigo-tres-h3 {
+    font-size: 1rem;
+    position: relative;
+    bottom: 10rem;
+}
+
+#vida-enemigo-uno, #vida-enemigo-dos, #vida-enemigo-tres {
+    position: relative;
+    bottom: 9rem;
+}
+
+.imagen-enemigo-elegido {
+    position: relative;
+    bottom: 9rem;
+}
+
+#imagen-personaje-uno-selec, #imagen-personaje-dos-selec, #imagen-personaje-tres-selec {
+    block-size: 10rem;
+    inline-size: 10rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    position: relative;
+    left: 15rem;
+    bottom: 9rem;
+}
+
+#pasar-turno, #pasar-turno-dos, #pasar-turno-tres, #reiniciar-uno, #reiniciar-dos, #reiniciar-tres {
+    position: relative;
+    bottom: 11rem;
+    left: 5rem;
+}
+
+#mensajes-box, #mensajes-box-dos, #mensajes-box-tres {
+    position: relative;
+    bottom: 2rem;
+}
+
+#mensaje-final-dos {
+    font-size: 1rem;
+    margin-left: 5rem
+}
+
+#mensaje-final-tres {
+    font-size: 1rem;
+}
+
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" /> 
+    <link href="stylePF.css" rel="stylesheet" type="text/css"/>
+    <title>PIXEFIGHTS</title>
+</head>
+<body id="body-pagina">
+
+    <section id="seccion-audio">
+        <audio id="audio-control" controls loop src="Assets/Music/Adventure Meme.mp3"></audio>
+        <audio id="audio-battle" controls loop src="Assets/Music/8 BIT RPG BATTLE.mp3"></audio>
+        <!--<p id="activa-musica"><- Activa la música ;)</p> -->
+        <p id="victorias">Victorias: 0</p>
+        <p id="derrotas">Derrotas: 0</p>
+        <p id="creditos-uno">Creado por Alan Jaques - 2022</p>
+        <p id="creditos">Creado por Alan Jaques - 2022</p>
+    </section>
+
+    <section id="seccion-comenzar-juego">
+        <h1 id="titulo">PIXEFIGHTS</h1>
+        <button id="boton-comenzar-juego">Jugar</button>
+    </section>
+
+    <!-- SECCION ELEGIR PERSONAJE -->
+
+    <section id="seccion-elegir-personaje">
+        <h2 id="elige-personaje">Elige tu personaje:</h2>
+        <div id="tarjetas-personajes">
+            <label id="primer-personaje" for="input-primer-personaje">
+                <img class="imagenes-personajes" src="Assets/Pj1PX.png">
+                <p id="nombre-nila" class="nombres-personajes">Nila</p>
+                <input id="input-primer-personaje" type="radio" name="grupo-personajes"/>
+            </label>
+            <label id="segundo-personaje" for="input-segundo-personaje">
+                <img class="imagenes-personajes" src="Assets/Pj2PX.png ">
+                <p id="nombre-spark" class="nombres-personajes">Spark</p>
+                <input id="input-segundo-personaje" type="radio" name="grupo-personajes"/>
+            </label>
+            <label id="tercer-personaje" id="input-tercer-personaje">
+                <img class="imagenes-personajes" src="Assets/Pj3PXF.png">
+                <p id="nombre-kriol" class="nombres-personajes">Kriol</p>
+                <input id="input-tercer-personaje" type="radio" name="grupo-personajes"/>
+            </label>
+        </div>
+        <button id="boton-habilidades">Habilidades</button>
+    </section>
+
+    <!-- CARDS PERSONAJES SELECCIONADOS -->
+
+    <section id="card-primer-personaje">
+        <div id="datos-primer-personaje">
+            <img id="imagen-personaje-uno" src="Assets/Pj1PX.png">
+            <p id="nombre-p1">Nila</p>
+            <p id="mostrar-HP-p1">100 HP</p>
+            <p id="ataque-uno-p1">Ataque débil - 20 daño 100% prob</p>
+            <p id="ataque-dos-p1">Ataque fuerte - 40 daño 33% prob</p>
+            <p id="ataque-tres-p1">Cura - 20 HP</p>
+    
+        </div>
+        <div>
+            <button id="boton-seleccionar-uno">Seleccionar</button>
+            <button id="boton-volver-uno">Volver</button>
+        </div>
+    </section>
+
+    <section id="card-segundo-personaje">
+        <div id="datos-segundo-personaje">
+            <img id="imagen-personaje-dos" src="Assets/Pj2PX.png">
+            <p id="nombre-p2">Spark</p>
+            <p id="mostrar-HP-p2">90 HP</p>
+            <p id="ataque-uno-p2">Ataque débil - 25 daño 100% prob</p>
+            <p id="ataque-dos-p2">Ataque fuerte - 35 daño 50% prob</p>
+            <p id="ataque-tres-p2">Cura - 25 HP</p>
+        </div>
+        <div>
+            <button id="boton-seleccionar-dos">Seleccionar</button>
+            <button id="boton-volver-dos">Volver</button>
+        </div>
+    </section>
+
+    <section id="card-tercer-personaje">
+        <div id="datos-tercer-personaje">
+            <img id="imagen-personaje-tres" src="Assets/Pj3PXF.png">
+            <p id="nombre-p3">Kriol</p>
+            <p id="mostrar-HP-p3">110 HP</p>
+            <p id="ataque-uno-p3">Ataque débil - 20 daño 100% prob</p>
+            <p id="ataque-dos-p3">Ataque fuerte - 50 daño 20% prob</p>
+            <p id="ataque-tres-p3">Cura - 20 HP</p>
+        </div>
+        <div>
+            <button id="boton-seleccionar-tres">Seleccionar</button>
+            <button id="boton-volver-tres">Volver</button>
+        </div>
+    </section>
+
+    <!-- SECCION PERSONAJE ELEGIDO POR PLAYER Y POR PC(ENEMIGO)-->
+
+    <section id="seccion-personaje-uno-elegido">
+        <div id="div-info-eleccion-uno">
+            <div id="personaje-player-uno">
+                <h3 id="personaje-uno-h3">Elegiste a Nila</h3>
+                <p id="vida-player-uno"></p>
+                <img id="imagen-personaje-uno-selec" src="Assets/Pj1PX.png"/>
+                <button id="ataque-uno-Nila" class="botones-ataques">Ataque débil</button>
+                <button id="ataque-dos-Nila" class="botones-ataques">Ataque fuerte</button>
+                <button id="ataque-tres-Nila">Cura</button>
+            </div>
+            <div id="personaje-enemigo-uno">
+                <h3 id="enemigo-uno-h3"></h3>
+                <p id="vida-enemigo-uno"></p>
+                <img id="enemigo-uno-elegido-op1" class="imagen-enemigo-elegido" src="Assets/Pj1EvilPX.png"/>
+                <img id="enemigo-dos-elegido-op1" class="imagen-enemigo-elegido" src="Assets/Pj2PX.png"/>
+                <img id="enemigo-tres-elegido-op1" class="imagen-enemigo-elegido" src="Assets/Pj3PXF.png"/>
+            </div>
+        </div>
+        <button id="pasar-turno">Seguir turno</button>
+        <button id="reiniciar-uno">Reiniciar</button>
+        <div id="mensajes-box">
+            <p>Mensajes</p>
+        </div>
+        <button id="boton-continuar-uno">Continuar</button>
+        <button id="boton-combatir-uno">Definir turno</button>
+    </section>
+
+
+    <section id="seccion-personaje-dos-elegido">
+        <div id="div-info-eleccion-dos">
+            <div id="personaje-player-dos">
+                <h3 id="personaje-dos-h3">Elegiste a Spark</h3>
+                <p id="vida-player-dos"></p>
+                <img id="imagen-personaje-dos-selec" src="Assets/Pj2PX.png">
+                <button id="ataque-uno-Spark" class="botones-ataques">Ataque débil</button>
+                <button id="ataque-dos-Spark" class="botones-ataques">Ataque fuerte</button>
+                <button id="ataque-tres-Spark">Cura</button>
+            </div>
+            <div id="personaje-enemigo-dos">
+                <h3 id="enemigo-dos-h3"></h3>
+                <p id="vida-enemigo-dos"></p>
+                <img id="enemigo-uno-elegido-op2" class="imagen-enemigo-elegido" src="Assets/Pj1PX.png">
+                <img id="enemigo-dos-elegido-op2" class="imagen-enemigo-elegido" src="Assets/Pj2EvilPX.png"/>
+                <img id="enemigo-tres-elegido-op2" class="imagen-enemigo-elegido" src="Assets/Pj3PXF.png"/>
+            </div>
+        </div>
+        <button id="pasar-turno-dos">Seguir turno</button>
+        <button id="reiniciar-dos">Reiniciar</button>
+        <div id="mensajes-box-dos">
+            <p>Mensajes</p>
+        </div>
+        <button id="boton-continuar-dos">Continuar</button>
+        <button id="boton-combatir-dos">Definir turno</button>
+    </section>
+
+    <section id="seccion-personaje-tres-elegido">
+        <div id="div-info-eleccion-tres">
+            <div id="personaje-player-tres">
+                <h3 id="personaje-tres-h3">Elegiste a Kriol</h3>
+                <p id="vida-player-tres"></p>
+                <img id="imagen-personaje-tres-selec" src="Assets/Pj3PXF.png"/>
+                <button id="ataque-uno-Kriol" class="botones-ataques">Ataque débil</button>
+                <button id="ataque-dos-Kriol" class="botones-ataques">Ataque fuerte</button>
+                <button id="ataque-tres-Kriol">Cura</button>
+            </div>
+            <div id="personaje-enemigo-tres">
+                <h3 id="enemigo-tres-h3"></h3>
+                <p id="vida-enemigo-tres"></p>
+                <img id="enemigo-uno-elegido-op3" class="imagen-enemigo-elegido" src="Assets/Pj1PX.png">
+                <img id="enemigo-dos-elegido-op3" class="imagen-enemigo-elegido" src="Assets/Pj2PX.png"/>
+                <img id="enemigo-tres-elegido-op3" class="imagen-enemigo-elegido" src="Assets/Pj3EvilPXF.png"/>
+            </div>
+        </div>
+        <button id="pasar-turno-tres">Seguir turno</button>
+        <button id="reiniciar-tres">Reiniciar</button>
+        <div id="mensajes-box-tres">
+            <p>Mensajes</p>
+        </div>
+        <button id="boton-continuar-tres">Continuar</button>
+        <button id="boton-combatir-tres">Definir turno</button>
+    </section>
+
+    <section id="seccion-final">
+        <div id="mensaje-final">
+            <p id="mensaje-final-uno"></p>
+            <p id="mensaje-final-dos"></p>
+            <p id="mensaje-final-tres"></p>
+            <p id="creditos-final">Creado por Alan Jaques 2022</p>
+        </div>
+    </section>
+
+    <script src="scriptPF.js"></script>
+</body>
+</html>
